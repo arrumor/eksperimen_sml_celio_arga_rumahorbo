@@ -78,8 +78,8 @@ def run_automation_pipeline(input_path, output_path, target_col):
 
 if __name__ == "__main__":
     # --- CONFIG ---
-    RAW_FILE = 'winequality-red.csv'
-    CLEAN_FILE = 'winequality_preprocessing.csv'
+    RAW_FILE = 'water_potability.csv'
+    CLEAN_FILE = 'water_potability_preprocessing.csv'
     TARGET = 'quality'
 
     # Ambil path file dari folder utama workspace
@@ -88,4 +88,5 @@ if __name__ == "__main__":
     out_csv = os.path.join(os.path.dirname(__file__), CLEAN_FILE)
 
     # Run
+
     run_automation_pipeline(in_csv, out_csv, TARGET)
